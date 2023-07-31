@@ -47,7 +47,7 @@ def main():
             st.write("5. Exit")
 
             choice = st.number_input("Enter your choice (1-5):", min_value=1, max_value=5, step=1)
-            if(st.button("proceed"):
+            if st.button("proceed"):
                 if choice == 1:
                     amount = st.number_input("Enter the amount to credit:", step=0.01, format="%.2f")
                     account1.credit(amount)
