@@ -47,7 +47,7 @@ def main():
             st.write("5. Exit")
 
             # choice = st.number_input("Enter your choice (1-5):", min_value=1, max_value=5, step=1)
-            choic=st.input("Enter your choice (1-5)")
+            choic=st.text_input("Enter your choice (1-5)")
             if st.button("proceed"):
                 if choice == "1":
                     st.write("enter the number")
