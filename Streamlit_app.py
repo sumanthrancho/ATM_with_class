@@ -64,6 +64,8 @@ def main():
                     st.write("Thank you for using the ATM. Goodbye!")
                 else:
                     st.error("Invalid choice. Please try again.")
+            else:
+                st.write("error")
 
 if __name__ == "__main__":
     main()
