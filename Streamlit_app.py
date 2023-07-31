@@ -47,7 +47,7 @@ def main():
             st.write("5. Exit")
 
             # choice = st.number_input("Enter your choice (1-5):", min_value=1, max_value=5, step=1)
-            choic=st.text_input("Enter your choice (1-5)")
+            choice=st.text_input("Enter your choice (1-5)")
             if st.button("proceed"):
                 if choice == "1":
                     st.write("enter the number")
@@ -65,8 +65,9 @@ def main():
                     st.write("Thank you for using the ATM. Goodbye!")
                 else:
                     st.error("Invalid choice. Please try again.")
-            else:
-                st.write("error")
+                    
+            st.write("End")
+
 
 if __name__ == "__main__":
     main()
