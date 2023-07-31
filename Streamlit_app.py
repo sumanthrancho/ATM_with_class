@@ -46,21 +46,22 @@ def main():
             st.write("4. Change PIN")
             st.write("5. Exit")
 
-            choice = st.number_input("Enter your choice (1-5):", min_value=1, max_value=5, step=1)
+            # choice = st.number_input("Enter your choice (1-5):", min_value=1, max_value=5, step=1)
+            choic=st.input("Enter your choice (1-5)")
             if st.button("proceed"):
-                if choice == 1:
+                if choice == "1":
                     st.write("enter the number")
                     amount = st.number_input("Enter the amount to credit:", step=0.01, format="%.2f")
                     account1.credit(amount)
-                elif choice == 2:
+                elif choice == "2":
                     amount = st.number_input("Enter the amount to debit:", step=0.01, format="%.2f")
                     account1.debit(amount)
-                elif choice == 3:
+                elif choice == "3":
                     account1.check_balance()
-                elif choice == 4:
+                elif choice == "4":
                     new_pin = st.text_input("Enter your new PIN:", type="password")
                     account1.change_pin(new_pin)
-                elif choice == 5:
+                elif choice == "5":
                     st.write("Thank you for using the ATM. Goodbye!")
                 else:
                     st.error("Invalid choice. Please try again.")
