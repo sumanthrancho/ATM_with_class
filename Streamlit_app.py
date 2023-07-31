@@ -61,7 +61,6 @@ def main():
                     account1.change_pin(new_pin)
                 elif choice == 5:
                     st.write("Thank you for using the ATM. Goodbye!")
-                    break
                 else:
                     st.error("Invalid choice. Please try again.")
 
